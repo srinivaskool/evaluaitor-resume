@@ -116,6 +116,3 @@ def process():
         "suggestion": result_suggestion,
         "matching": result_matching,
     }
-
-if __name__ == "__main__":
-    app.run(debug=True)
