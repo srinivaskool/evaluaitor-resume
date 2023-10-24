@@ -1,7 +1,5 @@
 langchain
 openai
-tiktoken==0.4.0
 faiss-cpu
 Flask
 gunicorn
-
