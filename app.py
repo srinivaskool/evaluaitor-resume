@@ -5,11 +5,14 @@ from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.vectorstores import FAISS
 from langchain.llms import OpenAI
 from langchain.chains.question_answering import load_qa_chain
+from flask_cors import CORS
 import warnings
+
 
 warnings.filterwarnings("ignore")
 
 app = Flask(__name__)
+CORS(app)
 
 def pdf_to_chunks(text):
     text_splitter = RecursiveCharacterTextSplitter(
